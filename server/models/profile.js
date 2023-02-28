@@ -1,7 +1,7 @@
 const { Schema, model } = require('mongoose');
 const bcrypt = require('bcrypt');
 
-const profileSchema = new Schema({
+const profileSchema = new Schema({ //user
   name: {
     type: String,
     required: true,
@@ -18,13 +18,9 @@ const profileSchema = new Schema({
     type: String,
     required: true,
     minlength: 5,
-  },
-  skills: [
-    {
-      type: String,
-      trim: true,
-    },
-  ],
+  }
+  
+  
 });
 
 // set up pre-save middleware to create password
@@ -45,4 +41,3 @@ profileSchema.methods.isCorrectPassword = async function (password) {
 const Profile = model('Profile', profileSchema);
 
 module.exports = Profile;
-
