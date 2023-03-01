@@ -9,13 +9,13 @@ import Nav from 'react-bootstrap/Nav';
 const Header = () => {
   
   return (
-    <header >
+   
     
-    <Navbar expand='lg' bg='light' > 
+    <Navbar expand='lg' bg='light'  variant='light'> 
         <Container>
-        <Navbar textag />
+       
           <Navbar.Brand href='#Home'>Dogtender</Navbar.Brand>
-          <Nav className='me-auto'>
+          <Nav style={{float:'right'}}>
             <Nav.Link href='#About-Us'>About Us</Nav.Link>
             <Nav.Link href='#Our-story'>Our Story</Nav.Link>
             <Nav.Link href='#Log-In'>Log In</Nav.Link>
@@ -23,7 +23,7 @@ const Header = () => {
           
         </Container>
       </Navbar>
-    </header>
+  
   );
 };
 
