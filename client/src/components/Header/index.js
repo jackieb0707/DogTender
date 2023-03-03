@@ -3,7 +3,7 @@ import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 
-
+import dogs101 from '../../assets/dogs101.jpg';
 
 
 const Header = () => {
@@ -16,9 +16,9 @@ const Header = () => {
           
           <Navbar.Brand href="#home">
             <img
-              src="./public/Dogs101.jpg"
-              width="15"
-              height="15"
+              src={dogs101}
+              width="128"
+              height="128"
               className="d-inline-block align-top"
               alt="Dog tender logo"
             />
