@@ -16,7 +16,7 @@ const userSchema = new Schema({ //user
     match: [/.+@.+\..+/, 'Must match an email address!'],
   },
 
-  Dogs:[dogSchema],
+  dogs:[dogSchema],
 
   password: {
     type: String,

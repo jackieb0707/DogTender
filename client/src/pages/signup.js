@@ -39,8 +39,8 @@ const Signup = () => {
       console.error(e);
     }
   };
-}
-  /* return ( 
+
+  return ( 
     <main className="flex-row justify-center mb-4">
       <div className="col-12 col-lg-10">
         <div className="card">
@@ -99,4 +99,4 @@ const Signup = () => {
   );
 };
 
-export default Signup;  */
+export default Signup;  
