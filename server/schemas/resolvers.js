@@ -1,20 +1,20 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { Profile } = require('../models');
+const {  User } = require('../models');
 const { signToken } = require('../utils/auth');
 
 const resolvers = {
   Query: {
     profiles: async () => {
-      return Profile.find();
+      return User.find();
     },
 
     profile: async (parent, { profileId }) => {
-      return Profile.findOne({ _id: profileId });
+      return User.findOne({ _id: profileId });
     },
     // By adding context to our query, we can retrieve the logged in user without specifically searching for them
     me: async (parent, args, context) => {
       if (context.user) {
-        return Profile.findOne({ _id: context.user._id });
+        return User.findOne({ _id: context.user._id });
       }
       throw new AuthenticationError('You need to be logged in!');
     },
@@ -22,13 +22,13 @@ const resolvers = {
 
   Mutation: {
     addProfile: async (parent, { name, email, password }) => {
-      const profile = await Profile.create({ name, email, password });
+      const profile = await User.create({ name, email, password });
       const token = signToken(profile);
 
       return { token, profile };
     },
     login: async (parent, { email, password }) => {
-      const profile = await Profile.findOne({ email });
+      const profile = await User.findOne({ email });
 
       if (!profile) {
         throw new AuthenticationError('No profile with this email found!');
@@ -48,7 +48,7 @@ const resolvers = {
     // Set up mutation so a logged in user can only remove their profile and no one else's
     removeProfile: async (parent, args, context) => {
       if (context.user) {
-        return Profile.findOneAndDelete({ _id: context.user._id });
+        return User.findOneAndDelete({ _id: context.user._id });
       }
       throw new AuthenticationError('You need to be logged in!');
     },

@@ -2,7 +2,7 @@ const { Schema, Types } = require('mongoose');
 
 const dogSchema = new Schema(
   {
-    dogbreed: {
+    breed: {
         type:String,
         required: true,
         maxlength: 50
