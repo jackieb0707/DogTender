@@ -1,9 +1,42 @@
+html {
+  min-height: 150%;
+  background-color: gray;
+} 
+nav  {
+  font-size: 1.8rem;
+  font-style:normal;
+  justify-content:space-between;
+  border-radius: 2.5rem;
+}
+
+nav {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  justify-content:space-between;
+ color:  rgb(93, 93, 227);
+}
+.photo1{
+  border-radius: 6%;
+  height: 200px;
+  width: 550px;
+}
+
+main{
+  font-size: 1.0rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  
+}
+
 .dog-pictures{
-  background-color: blue;
+  background-color: rgb(93, 93, 227);
 }
 
 
 .picture-div{
-  color: aliceblue;
+  color: rgb(249, 255, 240);
 
+}
+.Footer {
+  font-size: 6.0rem;
+  font-style: italic;
 }

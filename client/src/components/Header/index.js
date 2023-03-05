@@ -14,19 +14,25 @@ const Header = () => {
     <Navbar expand='lg' bg='light'  variant='light'> 
     <Container>
           
-          <Navbar.Brand href="#home">
-            <img
+          <Navbar.Brand href="#home">Dogtender</Navbar.Brand>
+
+             <img
               src={dogs101}
-              width="128"
-              height="128"
-              className="d-inline-block align-top"
+              width="200"
+              height="200"
+              border="4px" 
+              border-radius= "18px"
+              padding="99px"
+            
+              
+            
+            
+              className="photo1"
               alt="Dog tender logo"
-            />
-          </Navbar.Brand>
-        </Container>
-        <Container>
           
-          <Navbar.Brand href='#Home'>Dogtender</Navbar.Brand>
+            />
+         
+        </Container>
          
           <Nav style={{float:'right'}}>
             <Nav.Link href='#About-Us'>About Us</Nav.Link>
@@ -34,7 +40,7 @@ const Header = () => {
             <Nav.Link href='#Log-In'>Log In</Nav.Link>
           </Nav>
           
-        </Container>
+     
         
       </Navbar>
       
