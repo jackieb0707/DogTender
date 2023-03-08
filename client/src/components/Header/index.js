@@ -29,9 +29,9 @@ const Header = () => {
           <Navbar.Brand href='#Home'>Dogtender</Navbar.Brand>
          
           <Nav style={{float:'right'}}>
-            <Nav.Link href='#About-Us'>About Us</Nav.Link>
-            <Nav.Link href='#Sign-Up'>Sign up</Nav.Link>
-            <Nav.Link href='#Log-In'>Log In</Nav.Link>
+            <Nav.Link href=''>About Us</Nav.Link>
+            <Nav.Link href='/signup'>Sign up</Nav.Link>
+            <Nav.Link href='/login'>Log In</Nav.Link>
           </Nav>
           
         </Container>

@@ -1,6 +1,6 @@
 const { Schema, model } = require('mongoose');
 const bcrypt = require('bcrypt');
-const dogSchema = require('./Dog');
+
 
 const userSchema = new Schema({ //user
   name: {
@@ -16,7 +16,10 @@ const userSchema = new Schema({ //user
     match: [/.+@.+\..+/, 'Must match an email address!'],
   },
 
-  dogs:[dogSchema],
+  matches: [{
+    type:Schema.Types.ObjectId,
+    ref: 'Match'
+  }],
 
   password: {
     type: String,
