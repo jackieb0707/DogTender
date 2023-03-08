@@ -2,6 +2,9 @@
   "name": "tech-friends",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": "16.x.x"
+  },
   "main": "server/server.js",
   "scripts": {
     "start": "node server --ignore client",
