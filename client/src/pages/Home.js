@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Dogs102 from '../assets/Dogs102.jpg'
 
 const Home = () => {
   
@@ -14,10 +14,10 @@ const Home = () => {
 
 
         <div className='dog-pictures' >
-          <p className='picture-div'>
-            
-        
-          </p>
+        <p className='picture-div'>
+            DOG Picture here</p> 
+            <img src={Dogs102} alt="dogphoto" className='dog-pictures'/>
+          
           <p className='picture-div'>
             DOG Picture here
            

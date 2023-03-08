@@ -1,42 +1,55 @@
-html {
-  min-height: 150%;
+#root {
+  
   background-color: gray;
-} 
-nav  {
-  font-size: 1.8rem;
-  font-style:normal;
-  justify-content:space-between;
-  border-radius: 2.5rem;
+}
+#Title {
+  margin-left: 0;
+}
+a {
+  width: 12vw;
+  margin: 0 auto;
+}
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(93, 93, 227);
+  margin-bottom: 20px;
 }
 
-nav {
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  justify-content:space-between;
- color:  rgb(93, 93, 227);
-}
-.photo1{
+.photo1 {
   border-radius: 6%;
   height: 200px;
-  width: 550px;
+  width: 300px;
+  margin-right: auto;
 }
-
-main{
-  font-size: 1.0rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.navbar-nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+main {
+  font-size: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-style: italic;
-  
 }
 
-.dog-pictures{
-  background-color: rgb(93, 93, 227);
+.dog-pictures {
 }
 
-
-.picture-div{
+.picture-div {
   color: rgb(249, 255, 240);
-
 }
 .Footer {
-  font-size: 6.0rem;
+  font-size: 1rem;
   font-style: italic;
+  margin-top: 200px;
+  margin-bottom: 0;
+}
+.Footer >div>p{
+  margin-bottom: 0;
+}
+.card-header {
+  color: rgb(93, 93, 227);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
