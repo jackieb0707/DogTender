@@ -4,7 +4,7 @@ import React from 'react';
 const Footer = () => {
   
   return (
-    <footer>
+    <footer className='Footer'>
       <div>
         <p>
           Our story for this project is to make it easier for dog owners to network with others.
