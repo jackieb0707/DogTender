@@ -23,9 +23,9 @@ const Header = () => {
         />
 
         <Nav style={{ float: "right" }}>
-          <Nav.Link href="#About-Us">About Us</Nav.Link>
-          <Nav.Link href="#Sign-Up">Sign up</Nav.Link>
-          <Nav.Link href="#Log-In">Log In</Nav.Link>
+          <Nav.Link href="#About-Us">About Us 📞</Nav.Link>
+          <Nav.Link href="#Sign-Up">Sign up 📝</Nav.Link>
+          <Nav.Link href="#Log-In">Log In 🎉</Nav.Link>
         </Nav>
       </Navbar>
     
